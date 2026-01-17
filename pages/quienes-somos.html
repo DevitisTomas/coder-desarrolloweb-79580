@@ -1,75 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- link de mi css -->
-    <!-- <link rel="stylesheet" href="../css/style.css"> -->
-    <title>>S.M Herramientas</title>
-    <!-- Google Font -->
+
+    <title>S.M Herramientas | Quiénes Somos</title>
+
+    <!-- CSS propio -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
-        rel="stylesheet">
-    <!-- Boostrap -->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Source+Code+Pro&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        crossorigin="anonymous">
+
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <header>
-        <!-- etiqueta para imagen -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container"><a class="navbar-brand" href="../index.html"><img src="../assets/logo.png"
-                        alt=""></a>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#menuNavbar"><span class="navbar-toggler-icon"></span>
+    <!-- ================= HEADER ================= -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../assets/logo.png" alt="Logo de Herramientas S.M">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavbar">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <!-- etiqueta para listas desordenadas -->
                 <div class="collapse navbar-collapse" id="menuNavbar">
                     <ul class="navbar-nav ms-auto">
-
-                        <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="../pages/productos.html">Productos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="../pages/marcas.html">Marcas</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Quienes Somos</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="../pages/contacto.html">Contacto</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="marcas.html">Marcas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Quiénes Somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
                     </ul>
                 </div>
+
             </div>
-
-
-
-
-
         </nav>
     </header>
+
+    <!-- ================= MAIN ================= -->
     <main>
-        <!-- titulo de mi web -->
-        <h1>Herramientas S.M</h1>
+
+        <!-- Título -->
+        <section class="container my-4">
+            <h1 class="text-center">Quiénes Somos</h1>
+        </section>
+
         <!-- Banner -->
-        <section><img src="https://placehold.co/1920x400" alt=""></section>
-        <h2>Somos una empresa dedicada a la venta de herramientas manuales, eléctricas y maquinaria para el hogar, la
-            industria y la construcción. Nuestro objetivo es brindar productos de calidad, asesoramiento profesional y
-            el mejor servicio para que encuentres la herramienta exacta para tu proyecto. Trabajamos con marcas líderes
-            y contamos con atención personalizada para cada cliente.</h2>
+        <section class="banner">
+            <img src="https://placehold.co/1920x400" alt="Equipo y trayectoria de Herramientas S.M"
+                class="img-fluid w-100">
+        </section>
+
+        <!-- Contenido -->
+        <section class="container my-5">
+            <h2 class="mb-3">Nuestra empresa</h2>
+
+            <p>
+                Somos una empresa dedicada a la venta de herramientas manuales, eléctricas y maquinaria para el hogar,
+                la industria y la construcción.
+            </p>
+
+            <p>
+                Nuestro objetivo es brindar productos de calidad, asesoramiento profesional y el mejor servicio para que
+                encuentres la herramienta exacta para tu proyecto.
+            </p>
+
+            <p>
+                Trabajamos con marcas líderes del mercado y contamos con atención personalizada para cada cliente.
+            </p>
+        </section>
+
     </main>
-    <footer>
-        <!-- etiqueta para el pie de pagina -->
-        <p>todos los derechos reservados</p>
-        <!-- enlace a ig -->
-        <a href="https://www.instagram.com/" target="_blank"><img src="../assets/instagram.png" alt=""></a>
 
+    <!-- ================= FOOTER ================= -->
+    <footer class="bg-light text-center py-3">
+        <p>© 2026 Herramientas S.M - Todos los derechos reservados</p>
 
+        <a href="https://www.instagram.com/" target="_blank">
+            <img src="../assets/instagram.png" alt="Instagram de Herramientas S.M">
+        </a>
     </footer>
+
 </body>
 
 </html>
