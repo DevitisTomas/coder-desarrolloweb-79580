@@ -1,0 +1,158 @@
+/* ================= VARIABLES ================= */
+
+$color-primario: #ffb703;
+$color-oscuro: #111;
+$color-claro: #f5f5f5;
+$color-texto: #222;
+
+/* ================= RESET ================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ================= BODY ================= */
+
+body {
+    font-family: "DM Sans", sans-serif;
+    color: $color-texto;
+    background-color: #ffffff;
+}
+
+/* ================= HEADER / NAV ================= */
+
+.navbar-brand {
+    img {
+        width: 180px;
+    }
+}
+
+/* ================= BANNER ================= */
+
+.banner {
+    width: 100%;
+    height: 400px;
+    background-image: url("../assets/img/banner-home.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+
+    .banner-content {
+        margin-left: 5%;
+        color: white;
+        max-width: 600px;
+
+        h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+        }
+
+        .btn {
+            background-color: $color-primario;
+            border: none;
+            color: #000;
+            font-weight: 600;
+
+            &:hover {
+                background-color: #e6a700;
+            }
+        }
+    }
+}
+
+/* ================= PRODUCTOS ================= */
+
+.producto-img {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+    background-color: #fff;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.producto-titulo {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+section article img {
+    transition: transform 0.3s ease;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+
+/* ================= MARCAS ================= */
+
+.marca-img {
+    width: 100%;
+    max-width: 260px;
+    height: 120px;
+    object-fit: contain;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease, transform 0.3s ease;
+
+    &:hover {
+        filter: grayscale(0%);
+        transform: scale(1.05);
+    }
+}
+
+/* ================= FOOTER ================= */
+
+footer {
+    background-color: $color-claro;
+
+    p {
+        margin-bottom: 0.5rem;
+    }
+
+    img {
+        width: 60px;
+    }
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+
+    .navbar-brand img {
+        width: 140px;
+    }
+
+    .banner {
+        height: 300px;
+
+        .banner-content {
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+        }
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+}
