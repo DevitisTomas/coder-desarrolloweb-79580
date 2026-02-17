@@ -1,9 +1,11 @@
 /* ================= VARIABLES ================= */
 
 $color-primario: #7b2cbf;
+$color-secundario: #5a189a;
 $color-oscuro: #111;
 $color-claro: #f5f5f5;
 $color-texto: #222;
+$color-blanco: #ffffff;
 
 /* ================= RESET ================= */
 
@@ -16,13 +18,15 @@ $color-texto: #222;
 body {
     font-family: "DM Sans", sans-serif;
     color: $color-texto;
-    background-color: #ffffff;
+    background-color: $color-blanco;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 img {
     max-width: 100%;
     height: auto;
+    display: block;
 }
 
 /* ================= NAV ================= */
@@ -35,7 +39,7 @@ img {
     transition: color 0.3s ease;
 }
 
-/* LINK ACTIVO */
+/* LINK ACTIVO DINÁMICO */
 .home .nav-home,
 .productos .nav-productos,
 .marcas .nav-marcas,
@@ -60,25 +64,28 @@ img {
 
     .banner-content {
         margin-left: 5%;
-        color: white;
+        color: $color-blanco;
         max-width: 600px;
 
         h1 {
             font-size: 3rem;
             font-weight: bold;
             margin-bottom: 10px;
+            animation: fadeInDown 1s ease;
         }
 
         p {
             font-size: 1.2rem;
             margin-bottom: 15px;
+            animation: fadeInUp 1.2s ease;
         }
 
         .btn {
             background-color: $color-primario;
             border: none;
-            color: white;
+            color: $color-blanco;
             font-weight: 600;
+            padding: 10px 25px;
             transition: all 0.3s ease;
 
             &:hover {
@@ -92,6 +99,7 @@ img {
 /* ================= CARDS / PRODUCTOS ================= */
 
 .card {
+    border: none;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 
     &:hover {
@@ -131,6 +139,32 @@ footer {
 
     img {
         width: 60px;
+    }
+}
+
+/* ================= ANIMACIONES ================= */
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 
