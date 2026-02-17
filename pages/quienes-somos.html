@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>S.M Herramientas | Quiénes Somos</title>
-    <meta name="description" content="Conocé nuestra historia y valores.">
 
     <link rel="stylesheet" href="../css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -17,10 +16,14 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container">
                 <a class="navbar-brand" href="../index.html">
-                    <img src="../assets/img/logo.png" alt="Logo S.M Herramientas">
+                    <img src="../assets/img/logo.png" alt="Logo">
                 </a>
 
-                <div class="collapse navbar-collapse">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menuNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item"><a class="nav-link nav-home" href="../index.html">Inicio</a></li>
                         <li class="nav-item"><a class="nav-link nav-productos" href="productos.html">Productos</a></li>
@@ -34,37 +37,36 @@
         </nav>
     </header>
 
-    <main class="container my-5">
+    <section class="banner">
+        <div class="banner-content">
+            <h1>Quiénes Somos</h1>
+            <p>Conocé nuestra historia y nuestros valores</p>
+        </div>
+    </section>
 
-        <h1 class="text-center mb-4">Quiénes Somos</h1>
-
-        <p>
-            Somos una empresa especializada en herramientas manuales, eléctricas y maquinaria para el hogar y la
-            industria.
-        </p>
-
-        <p>
-            Nuestro compromiso es brindar productos de calidad, asesoramiento profesional y atención personalizada.
-        </p>
-
-        <p>
-            Trabajamos con marcas líderes para garantizar rendimiento y durabilidad.
-        </p>
-
-    </main>
+    <section class="container my-5">
+        <h2>Nuestra Empresa</h2>
+        <p>Somos una empresa dedicada a la venta de herramientas manuales, eléctricas y maquinaria para el hogar, la
+            industria y la construcción.</p>
+        <p>Brindamos productos de calidad, asesoramiento profesional y el mejor servicio.</p>
+    </section>
 
     <footer class="text-center py-4 mt-5">
-        <div class="redes-sociales d-flex justify-content-center gap-4">
-            <a href="https://www.instagram.com/" target="_blank" class="social-icon">
-                <img src="../assets/icons/instagram.png" alt="Instagram">
+        <p>© 2026 S.M Herramientas - Todos los derechos reservados</p>
+
+        <div class="redes-sociales d-flex justify-content-center gap-4 mt-3">
+            <a href="https://www.instagram.com/" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
             </a>
-            <a href="https://wa.me/5491123456789" target="_blank" class="social-icon">
-                <img src="../assets/icons/whatsapp.png" alt="WhatsApp">
+
+            <a href="https://wa.me/5491123456789" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
             </a>
         </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>
